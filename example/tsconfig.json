@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-detect-app": ["../src/index"],
+      "expo-detect-app/*": ["../src/*"]
+    }
+  }
+}
