@@ -1,20 +1,20 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from "react-native";
 
-import * as ExpoDetectApp from 'expo-detect-app';
+import * as ExpoDetectApp from "expo-detect-app";
+import { useEffect } from "react";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>{ExpoDetectApp.hello()}</Text>
-    </View>
-  );
+  useEffect(() => {
+    console.log(ExpoDetectApp.detect("expo.modules.detectapp.example"));
+  }, []);
+  return <View style={styles.container}></View>;
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

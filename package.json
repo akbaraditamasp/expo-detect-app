@@ -1,5 +1,5 @@
 {
-  "name": "expo-detect-app",
+  "name": "@akbaraditamasp/expo-detect-app",
   "version": "0.1.0",
   "description": "Detect if spesific app has installed on device",
   "main": "build/index.js",
